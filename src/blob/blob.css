@@ -1,0 +1,22 @@
+
+
+#blob{
+
+    
+    background-color:black;
+    height: 250px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background : linear-gradient(
+     to right,
+     aquamarine,
+     mediumpurple
+    );
+    animation: rotate 20s infinite;
+    filter: blur(70px);
+  
+  }

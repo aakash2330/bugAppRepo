@@ -1,0 +1,142 @@
+
+  
+
+  
+  
+  .cardd {
+    background-color: rgb(255 255 255 / 5%);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 20rem;
+    flex-direction: column;
+    width: 3%;  
+  }
+  
+
+  
+  .cardd > .cardd-content {
+    background-color: rgb(255 255 255 / 5%);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    z-index: 2;
+    width: 20rem;
+  }
+  
+  /* -- ↓ ↓ ↓ extra cardd content styles ↓ ↓ ↓ -- */
+  
+  h1, h2, h3, h4, span {
+    color: rgb(240, 240, 240);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+  }
+  
+  i {  
+    color: rgb(240, 240, 240);
+  }
+  
+  .cardd-image {
+    align-items: center;
+    display: flex;
+    
+    height: 70%;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .cardd-image > i {
+    font-size: 6em;
+    opacity: 0.25;
+  }
+  
+  .cardd-info-wrapper {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding: 0px 20px;
+  }
+  
+  .cardd-info {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cardd-info > i {  
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .cardd-info-title > h3 {
+    font-size: 1.1em;
+    line-height: 20px;
+  }
+  
+  .cardd-info-title > h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85em;
+    margin-top: 8px;
+  }
+  
+  /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+  
+  @media(max-width: 1000px) {
+    body {
+      align-items: flex-start;  
+      overflow: auto;
+    }
+    
+    #cardds {    
+      max-width: 1000px;
+      padding: 10px 0px;
+    }
+    
+    .cardd {
+      flex-shrink: 1;
+      width: calc(50% - 4px);
+    }
+  }
+  
+  @media(max-width: 500px) {
+    .cardd {
+      height: 180px;
+    }
+    
+    .cardd-image {
+      height: 80px;  
+    }
+    
+    .cardd-image > i {
+      font-size: 3em;
+    }
+      
+    .cardd-info-wrapper {
+      padding: 0px 10px;
+    }
+    
+    .cardd-info > i { 
+      font-size: 0.8em; 
+    }
+    
+    .cardd-info-title > h3 {
+      font-size: 0.9em;
+    }
+  
+    .cardd-info-title > h4 {
+      font-size: 0.8em;
+      margin-top: 4px;
+    }
+  }
+  
+  @media(max-width: 320px) {
+    .cardd {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,96 @@
+#b{
+    display: grid;
+    place-items: center;
+    margin: 0rem;
+    overflow: hidden;  
+    font-family: "Montserrat", sans-serif;
+    padding: 1rem;
+  }
+
+
+  .card {
+    background-color: rgb(255 255 255 / 5%);
+    width:50%;
+    border-radius: 20px;
+   top: 15%;
+    position: absolute;
+    align-items: center;
+
+    background-image: radial-gradient(
+  rgba(255, 255, 255, 0.25) 1px, 
+      transparent 1px
+    );
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    height: 60%;
+  
+  }
+  
+  .card:after {  
+    content: "";
+    height: 60%;
+    width: 0.2rem;  
+    position: absolute;  
+    right: -1px;
+    top: 65%;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    background: linear-gradient(
+      transparent,
+      mediumslateblue,
+      transparent
+    );
+    opacity: 0;
+  }
+  
+  .card:after {  
+    top: 65%;
+    opacity: 0;
+  }
+  
+  .card:hover:after {
+    top: 10%;
+    opacity: 1;
+  }
+  
+  .card-content {  
+    margin: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 1px, 
+      transparent 1px
+    );
+    background-position: 50% 50%;
+    background-size:contain;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  
+  .card-content > :is(h1, h3, p) {
+    text-align: center;
+  }
+  
+  .card-content > h1 {
+    color: rgb(250 249 246); 
+    font-size: 1.5rem;
+  }
+  
+  .card-content > h3 {
+    color:mediumslateblue;
+    font-size: 2rem;
+  }
+  
+  .card-content > p {
+    color: rgb(255 255 255 / 75%);
+    line-height: 1.5rem;
+  }
+  

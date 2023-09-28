@@ -1,0 +1,32 @@
+
+  
+  #logo {
+    position: absolute;
+    left: -10px;
+    width: 85px;
+    aspect-ratio: 1000 / 556;
+    user-select: none;
+    bottom: 7%;
+    z-index: 9999;
+  
+  }
+  
+  #logo > img {
+    width: 100%;
+    position: absolute;
+    opacity: 0.7;
+  }
+  
+  #logo1{
+    filter: sepia(0%) hue-rotate(50deg);
+    
+  }
+  #logo2{
+    filter: sepia(0%) hue-rotate(150deg);
+  }
+  #logo3{
+    filter: sepia(0%) hue-rotate(230deg);
+  }
+  #logo4{
+    filter: sepia(0%) hue-rotate(10deg);
+  }

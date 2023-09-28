@@ -1,0 +1,73 @@
+#main li {
+    text-align: left;
+    color: white;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    cursor: pointer;
+    z-index: 5;
+    width: 10rem;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+   transition: all .4s ease-in-out;
+
+   font-size: x-large;
+   font-family: 'Space Mono', monospace;
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  .drop {
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 48px;
+  }
+  .drop div {
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    -webkit-transition: all 0.5s 0.1s;
+    -moz-transition: all 0.5s 0.1s;
+    -ms-transition: all 0.5s 0.1s;
+    transition: all 0.5s 0.1s;
+    position: relative;
+  }
+  .drop li {
+    display: block;
+    padding: 0;
+    width: 100%;
+    transition: all .4s ease-in-out;
+
+    color: white;
+    font-size: x-large;
+    font-family: 'Space Mono', monospace;
+   
+  }
+  
+  
+  
+  #main li:hover ul div {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    
+  }
+    
+#sml>li{
+    border-radius: 0%;
+}
+
+#sml li:hover{
+    background-color:rgb(255 255 255 / 25%);
+}
+
